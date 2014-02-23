@@ -9,11 +9,11 @@ class Bob
             return "Woah, chill out!"
 
         # Check if you are asking a question
-        else if text.split("")[text.length - 1] == "?"
+        else if text.slice(-1) == "?"
             return "Sure."
 
         # Check if you are talking forcefully
-        else if text.split("")[text.length - 1] == "!"
+        else if text.slice(-1) == "!"
             return "Whatever."
         
         # If all else fails, just say whatever
